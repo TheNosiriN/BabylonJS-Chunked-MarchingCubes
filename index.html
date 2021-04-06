@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Marching Cubes FPS</title>
+        <script src="libraries/babylon.max.js"></script>
+				<script src="libraries/CCapture.all.min.js"></script>
+				<script src="src/chunk/generation/Vector3.js"></script>
+				<script src="src/cinematics/Points.js"></script>
+				<script src="src/cinematics/CinematicCamera.js"></script>
+
+				<script src="src/Utils.js"></script>
+				<script src="src/Assets.js"></script>
+				<script src="src/chunk/Chunk.js"></script>
+				<script src="src/lighting/Sky.js"></script>
+				<script src="src/lighting/Sun.js"></script>
+				<script src="src/player/Player.js"></script>
+				<script src="src/chunk/WorkerPool.js"></script>
+				<script src="src/lighting/Effects.js"></script>
+				<script src="src/lighting/ShaderStore.js"></script>
+				<script src="src/chunk/ChunkController.js"></script>
+				<script src="src/chunk/generation/Tables.js"></script>
+				<script src="src/chunk/generation/Vegetation.js"></script>
+				<script src="src/chunk/generation/PerlinNoise.js"></script>
+				<script src="src/chunk/generation/MarchingCubes.js"></script>
+
+        <style>
+						#canvas {
+								width: 100%;
+								height: 100%;
+						}
+						body {
+							margin: 0;
+							padding: 0;
+							overflow-y: hidden;
+							overflow-x: hidden;
+						}
+
+						#cameraInfo {
+							position: absolute;
+							background-color: purple;
+							text-align: center;
+							font-family: monospace;
+							font-size: 16px;
+							color: white;
+							top: 10px;
+							left: 5px;
+							width: auto;
+							height: auto;
+						}
+        </style>
+    </head>
+
+    <body>
+        <canvas id="canvas"></canvas>
+
+				<div id="cameraInfo"></div>
+        <script src="src/Game.js"></script>
+    </body>
+</html>
